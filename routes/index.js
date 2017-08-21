@@ -6,6 +6,7 @@ var eventName = process.env.EVENT_NAME || 'Express';
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: eventName });
+  console.log("Request received..");
 });
 
 module.exports = router;
