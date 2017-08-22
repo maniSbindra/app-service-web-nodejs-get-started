@@ -18,6 +18,12 @@ To learn how to deploy this starter web app to App Service in a few minutes, go 
 * Follow the steps mentioned in [Creating web app on Linux](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-linux-how-to-create-web-app)
 * Select the latest node version where you need to select the built-in image source (App was tested with version 6.9)
 
+#### Setting continous deployment from github repo branch
+* Click on Deployment Options
+* Next select Github and configure your github repository and branch. If you want to use this repository (https://github.com/maniSbindra/app-service-web-nodejs-get-started) first fork the repository in your github account, and then configure that repository and branch.
+* Next click on the Sync button to deploy you github app on your Linux App Service
+* Click on the site url to access the site. You can find this by clicking on the overview tab of your web application.
+
 
 ### Deploymnet using custom docker image
 #### Building Docker Container image
@@ -33,6 +39,8 @@ To learn how to deploy this starter web app to App Service in a few minutes, go 
 * Follow the steps mentioned in [Creating web app on Linux using custom docker container image](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-linux-using-custom-docker-image)
 * Select Image source as docker hub
 * Enter the image name and tag (maninderjit/nodeapp:1.0)
+* Save the information
+* Click on the site url to access the site. You can find this by clicking on the overview tab of your web application.
 
 ### Enable Application logging to File
 * Enable Application logging to file following steps mentioned in [Enable Logging](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-linux-intro)
